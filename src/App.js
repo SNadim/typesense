@@ -14,14 +14,14 @@ const AppContainer = styled.div`
 `;
 
 function App() {
-  console.log(process.env.REACT_APP_TYPESENSE_SEARCH_ONLY_API_KEY);
+  console.log(searchClient);
   return (
     <AppContainer>
       <h2>React/Typesense Movies InstantSearch</h2>
       <InstantSearch indexName="products" searchClient={searchClient}>
         <h4>Search Movies</h4>
         <SearchBox />
-        <RefinementList attribute="ProductName" />
+        <RefinementList />
         <Products />
         <Pagination />
       </InstantSearch>

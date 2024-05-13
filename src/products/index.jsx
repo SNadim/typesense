@@ -13,6 +13,7 @@ const HitsContainer = styled.div`
 `;
 
 function Products({ hits }) {
+  
   return (
     <HitsContainer>
       {hits.map((hit) => (

@@ -10,11 +10,6 @@ const HitContainer = styled.div`
   margin: 2em 1em;
 `;
 
-const MoviePoster = styled.img`
-  width: 180px;
-  height: auto;
-`;
-
 const Title = styled.div`
   font-weight: black;
   font-size: 24px;
@@ -22,35 +17,7 @@ const Title = styled.div`
   text-align: center;
 `;
 
-const Overview = styled.div`
-  /* max-height: 9px; */
-  text-overflow: ellipsis;
-  overflow: hidden;
-  margin-top: 1em;
-  line-height: 1.3;
-  font-size: 14px;
-`;
 
-const Rating = styled.b`
-  font-size: 16px;
-  color: #2ecc71;
-  margin-top: 1rem;
-`;
-
-const Genre = styled.div`
-  font-size: 14px;
-  color: #236adb;
-  margin-top: 10px;
-`;
-
-const HitsContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
 
 export function Product(props) {
   const { hit } = props;
